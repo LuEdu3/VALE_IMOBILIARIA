@@ -16,6 +16,7 @@ display: block;
 }
 /* PESQUISA */
 .conteudo-busca{
+    width: 100%;
     padding: 80px 30px 0 0;
 }
 .conteudo-busca .container{
@@ -57,7 +58,9 @@ display: block;
     width: auto;
 }
 /* PESQUISA AVANÇADA */
-.container .row{
-    display: flex;
-
+.pesquisa-avancada{
+height: 348px;
+}
+.pesquisa-avancada .container{
+    height: 348px;
 }

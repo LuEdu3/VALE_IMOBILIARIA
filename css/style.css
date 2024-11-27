@@ -128,3 +128,11 @@
     }
 
 }
+
+/* DESTAQUES */
+.destaques{
+    width: 1385px;
+    height: 616px;
+    border: 10px solid black;
+    background-color: gray;
+}

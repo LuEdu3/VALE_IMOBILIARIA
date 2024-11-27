@@ -104,9 +104,18 @@
 }
 
 .botao-encontrar {
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    
+}
+@media (min-width: 768px) {
+    .me-md-2 {
+        margin-top: 50px;
+        margin-right: 110px !important;
+    }
+}
+
+.btn {
+    border-radius: 0%;
 }
 
 /* DROPDOWN */

@@ -1,3 +1,6 @@
+/* HEADER */
+.container {}
+
 /* NAVBAR */
 .navbar-brand {
     width: 400px;
@@ -80,7 +83,8 @@
     margin-bottom: 10px;
     background-color: aliceblue;
 }
-.espaco{
+
+.espaco {
     padding-top: 15px;
     padding-bottom: 30px;
     border-top: 3px solid green;
@@ -98,5 +102,20 @@
     /* background-color: aqua; */
     align-items: center;
 }
-/* MODAL */
 
+.botao-encontrar {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* DROPDOWN */
+
+/* MODAL */
+.p-3 {
+    .btn {
+        width: 220px;
+        height: 50px;
+    }
+
+}

@@ -135,4 +135,95 @@
     height: 616px;
     border: 10px solid black;
     background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-image: url(../images/Imagem_central.jpg);
+    background-repeat: no-repeat;
 }
+
+
+.destaques{
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    .carrossel {
+        position: relative;
+        width: 800px; /* Largura do carrossel */
+        height: 600px; /* Altura do carrossel */
+        overflow: hidden;
+        border-radius: 10px; /* Cantos arredondados */
+    }
+    
+    .window {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .clr {
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out; /* Transição suave */
+    }
+    
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    .item img {
+        width: 100%; /* Imagens ocupam toda a largura do carrossel */
+        height: auto; /* Imagens mantêm a proporção */
+        max-height: 200px; /* Limita a altura máxima das imagens */
+        object-fit: cover; /* Garante que as imagens cubram o espaço */
+    }
+    
+    button {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 2em;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+        transition: color 0.3s ease;
+    }
+    
+    button:hover {
+        color: #ccc;
+    }
+    
+    .prev {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .next {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+

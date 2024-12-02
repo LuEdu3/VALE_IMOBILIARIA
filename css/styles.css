@@ -143,7 +143,7 @@
     background-repeat: no-repeat;
 }
 .destaques{
-    .col{
+    .col-6{
         border: 2px solid black;
         width: auto;
         height: 100px;

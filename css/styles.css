@@ -141,11 +141,18 @@
     align-items: center;
     align-content: center;
     background-repeat: no-repeat;
-}
-.destaques{
-    .col-6{
-        border: 2px solid black;
-        width: auto;
-        height: 100px;
+    
+    .imovel-destaque{
+        
     }
 }
+    .box-imovel-gr{
+        width: 585px;
+        height: 444px;
+        background-color: white;
+    }
+    .box-imovel-pq{
+        width: 585px;
+        height: 230px;
+        background-color: white;
+    }

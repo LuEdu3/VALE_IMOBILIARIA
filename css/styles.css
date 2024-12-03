@@ -130,7 +130,7 @@
 }
 
 /* DESTAQUES */
-.destaques{
+/* .destaques{
     width: 1385px;
     height: 616px;
     border: 10px solid black;
@@ -142,14 +142,4 @@
     align-content: center;
     background-repeat: no-repeat;
     
-}
-    .box-imovel-gr{
-        width: 585px;
-        height: 444px;
-        background-color: white;
-    }
-    .box-imovel-pq{
-        width: 585px;
-        height: 230px;
-        background-color: white;
-    }
+} */

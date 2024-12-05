@@ -1,11 +1,14 @@
 /* HEADER */
-.container {}
-
+html, body{
+    background-color: #88b257;
+}
 /* NAVBAR */
+
 .navbar-brand {
     width: 400px;
     height: 41.99px;
     display: block;
+    margin-left: 6%;
 }
 
 /* MENU QUE ABRE */

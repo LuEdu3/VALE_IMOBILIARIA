@@ -133,11 +133,11 @@ html, body{
 }
 
 /* DESTAQUES */
-/* .destaques{
+.destaques{
     width: 1385px;
     height: 616px;
-    border: 10px solid black;
-    background-color: gray;
+    /* border: 10px solid black; */
+    /* background-color: gray; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -145,4 +145,10 @@ html, body{
     align-content: center;
     background-repeat: no-repeat;
     
-} */
+}
+.destaques{
+    .card-img-top{
+        width: auto;
+        height: 250px;
+    }
+}

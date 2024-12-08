@@ -33,3 +33,14 @@ html body{
             align-content: center;
         }
     }
+
+    /* SEÇÃO PESQUISA */
+    .pesquisa{
+        background-color: grey;
+
+        & .container{
+            border: 3px solid green;
+        width: 1000px;
+        height: auto;
+        }
+    }

@@ -8,11 +8,28 @@ html body{
     width: max-content;
     height: auto;
 }
-.divisao-navbar .container .col{
+.divisao-navbar{
         padding: 0;
         margin: 0;
-        max-width:none;
+        width: none;;
         text-align: center;
         align-items: center;
         align-content: center;
+
+        & .container{
+            padding: 0;
+            margin: 0;
+            width: none;;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+        & .row{
+            padding: 0;
+            margin: 0;
+            width: none;;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
     }

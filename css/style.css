@@ -1,3 +1,9 @@
+/* HTML */
+html body{
+    background-color: black;
+}
+
+
 /* NAVBAR */
 .navbar-brand {
     width: 400px;

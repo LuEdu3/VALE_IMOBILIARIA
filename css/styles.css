@@ -1,53 +1,70 @@
 /* HTML */
-html body{
+html body {
     background-color: black;
 }
 
 /* NAVBAR */
-.divsao-navbar{
+.divsao-navbar {
     width: max-content;
     height: auto;
 }
-.divisao-navbar{
+
+.divisao-navbar {
+    padding: 0;
+    margin: 0;
+    width: none;
+    ;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+    & .container {
         padding: 0;
         margin: 0;
-        width: none;;
+        width: none;
+        ;
         text-align: center;
         align-items: center;
         align-content: center;
-
-        & .container{
-            padding: 0;
-            margin: 0;
-            width: none;;
-            text-align: center;
-            align-items: center;
-            align-content: center;
-        }
-        & .row{
-            padding: 0;
-            margin: 0;
-            width: none;;
-            text-align: center;
-            align-items: center;
-            align-content: center;
-        }
     }
 
-    /* SEÇÃO PESQUISA */
-    .pesquisa{
-        background-color: grey;
-        
-        & .container{
-            border: 3px solid green;
-        
+    & .row {
+        padding: 0;
+        margin: 0;
+        width: none;
+        ;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+/* SEÇÃO PESQUISA */
+.pesquisa {
+    background-color: grey;
+
+    & .border{
+        margin: 2% 0;
+    }
+    & .line .border{
+        margin: 0;
+    }
+    & .line{
+        padding: 0;
+    }
+
+    & .container {
+        border: 3px solid green;
         height: auto;
-        }
     }
 
-    .col{
-        & .form-control{
-            width: 25%;
-            align-items: end;
-        }
+}
+.col-12{
+    & .container-md{
+        width: max-content;
     }
+    .navbar{
+        width: none;
+        height: 80%;
+    }
+}

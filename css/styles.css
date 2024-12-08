@@ -63,8 +63,28 @@ html body {
     & .container-md{
         width: max-content;
     }
-    .navbar{
+    & .navbar{
         width: none;
         height: 80%;
     }
+    & .valores{
+        display: inline;
+        width: 48%;
+    }
+}
+
+/* BUSCA AVANCADA FORMS */
+.busca-avancada-forms{
+    margin-top: 5%;
+}
+.col-12{
+    & .btn{
+        width: 100%;
+    }
+}
+.col-12{
+    & .valores{
+        width: 50%;
+    }
+
 }

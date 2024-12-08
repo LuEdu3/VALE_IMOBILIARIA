@@ -45,15 +45,9 @@ html body{
         }
     }
 
-    .pesquisa-simpes{
-        display: inline;
-        
-        & span{
-            background-color: brown;
-        }
-
-        &  .form-control{
-            width: 100px;
-            height: auto;
+    .col{
+        & .form-control{
+            width: 25%;
+            align-items: end;
         }
     }

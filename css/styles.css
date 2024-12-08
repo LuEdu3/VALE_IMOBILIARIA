@@ -8,8 +8,7 @@ html body{
     width: max-content;
     height: auto;
 }
-
-.divisao-navbar .container{
+.divisao-navbar .container .col{
         padding: 0;
         margin: 0;
         max-width:none;

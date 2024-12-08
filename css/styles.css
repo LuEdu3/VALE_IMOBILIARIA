@@ -67,10 +67,6 @@ html body {
         width: none;
         height: 80%;
     }
-    & .valores{
-        display: inline;
-        width: 48%;
-    }
 }
 
 /* BUSCA AVANCADA FORMS */

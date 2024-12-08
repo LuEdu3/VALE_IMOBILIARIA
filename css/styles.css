@@ -3,3 +3,10 @@ html body{
     background-color: black;
 }
 
+/* NAVBAR */
+.divsao-navbar{
+    width: max-content;
+    height: auto;
+    &
+}
+

@@ -43,13 +43,15 @@ html body {
 .pesquisa {
     background-color: grey;
 
-    & .border{
+    & .border {
         margin: 2% 0;
     }
-    & .line .border{
+
+    & .line .border {
         margin: 0;
     }
-    & .line{
+
+    & .line {
         padding: 0;
     }
 
@@ -57,42 +59,49 @@ html body {
         border: 3px solid green;
         height: auto;
     }
-.input-group{
-    & .btn{
-        width: fit-content;
+
+    & .input-group {
+        & .btn {
+            width: fit-content;
+        }
     }
 }
-}
-.col-12{
-    & .container-md{
+
+.col-12 {
+    & .container-md {
         width: max-content;
     }
-    & .navbar{
+
+    & .navbar {
         width: none;
         height: 80%;
     }
 }
 
 /* BUSCA AVANCADA FORMS */
-.busca-avancada-forms{
+.busca-avancada-forms {
     margin-top: 2%;
 }
-.col-12{
-    & .btn{
+
+.col-12 {
+    & .btn {
         width: 100%;
     }
 }
-.col-12{
-    & .valores{
+
+.col-12 {
+    & .valores {
         width: 50%;
     }
 
 }
-.col-12{
+
+.col-12 {
     padding-top: 1%;
 }
+
 /* LINHA PARTE INFERIROR */
-.form-control{
+.form-control {
     align-items: start;
     align-content: center;
     text-align: center;

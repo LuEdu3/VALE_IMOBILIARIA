@@ -2,18 +2,18 @@
 html body {
     background-color: black;
 }
-
-/* NAVBAR */
-.divsao-navbar {
-    width: max-content;
-    height: auto;
+.form-control{
+    border-radius: 0%;
+}
+.btn{
+    border-radius: 0%;
 }
 
+/* NAVBAR */
 .divisao-navbar {
     padding: 0;
     margin: 0;
     width: none;
-    ;
     text-align: center;
     align-items: center;
     align-content: center;
@@ -22,7 +22,6 @@ html body {
         padding: 0;
         margin: 0;
         width: none;
-        ;
         text-align: center;
         align-items: center;
         align-content: center;
@@ -32,7 +31,6 @@ html body {
         padding: 0;
         margin: 0;
         width: none;
-        ;
         text-align: center;
         align-items: center;
         align-content: center;
@@ -42,7 +40,9 @@ html body {
 /* SEÇÃO PESQUISA */
 .pesquisa {
     background-color: grey;
-
+    width: 1314px;
+    margin-left: auto;
+    margin-right: auto;
     & .border {
         margin: 2% 0;
     }
@@ -108,6 +108,57 @@ html body {
 }
 
 /* BOTAO PESQUISA */
-.teste{
-    display: inline;
+.botao-pesquisa {
+    /* min-width: 510px;
+    max-width: 510px; */
+    padding-top: 2%;
+}
+
+@media (min-width: 571px) and (max-width: 768px) {
+    & .pesquisa{
+        width: 764px;
+    }
+    & .botao-pesquisa {
+        width: 510px;
+    }
+    & .row {
+        & .valores {
+            margin-left: 10px;
+            align-content: center;
+            align-items: center;
+            width: 47%;
+        }
+    }
+}
+
+/* Estilos para telas pequenas (móveis e tablets pequenos) */
+@media (max-width: 576px) {
+    & .pesquisa{
+        width: 764px;
+    }
+    & .botao-pesquisa {
+        width: 510px;
+    }
+    & .row {
+        & .valores {
+            margin-left: 10px;
+            align-content: center;
+            align-items: center;
+            width: 47%;
+        }
+    }
+}
+
+/* Estilos para telas médias (tablets e dispositivos com telas médias) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .example {
+        background-color: lightgreen;
+    }
+}
+
+/* Estilos para telas grandes (desktop e monitores maiores) */
+@media (min-width: 993px) {
+    .example {
+        background-color: lightcoral;
+    }
 }

@@ -106,3 +106,8 @@ html body {
     align-content: center;
     text-align: center;
 }
+
+/* BOTAO PESQUISA */
+.teste{
+    display: inline;
+}

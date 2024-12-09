@@ -71,8 +71,12 @@
                         <span>Encontre seu Imóvel</span>
                     </div>
                     <div class="col-12 col-md-6">
-                        <input class="form-control" type="text" placeholder="Campo de entrada">
-                    </div>
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Campo de entrada">
+                          <button class="btn btn-outline-warning" type="button">Warning</button>
+                        </div>
+                      </div>
+                      
 
                     <!-- BUSCA AVANCADA -->
 
@@ -85,11 +89,9 @@
                         </nav>
                     </div>
 
-                    <!-- ESTADO CIDADE BAIRRO VALOR MAX E MIN  -->
                     <!-- ESTADO -->
                     <div class="busca-avancada-forms">
                         <div class="row align-items-center text-center text-md-start">
-
 
                             <div class="col-12 col-md-3">
                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
@@ -148,10 +150,112 @@
                                 <div class="row align-items-center text-center text-md-start">
                                     <input class="form-control valores" type="text" placeholder="Default input"
                                         aria-label="default input example">
-                                    <input class="form-control valores" type="text" placeholder="Default input" data-mask="decimal"
-                                        aria-label="default input example">
+                                    <input class="form-control valores" type="text" placeholder="Default input"
+                                        data-mask="decimal" aria-label="default input example">
                                 </div>
+                            </div>
+                        </div>
+                        <div class="line-inf">
+                            <div class="row align-items-center text-center text-md-start">
+                                <!-- VENDA -->
+                                <div class="col-12 col-md-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
 
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- TIPO DE IMOVEL -->
+                                <div class="col-12 col-md-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- DORMITORIOS -->
+                                <div class="col-12 col-md-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Launch demo modal
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- AREA MIN E MAX -->
+                                <div class="col-12 col-md-3">
+                                    <div class="row align-items-center text-center text-md-start">
+                                        <input class="form-control valores" type="text" placeholder="Default input"
+                                            aria-label="default input example">
+                                        <input class="form-control valores" type="text" placeholder="Default input"
+                                            data-mask="decimal" aria-label="default input example">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

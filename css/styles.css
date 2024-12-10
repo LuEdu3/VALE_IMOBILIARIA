@@ -2,6 +2,9 @@
 html body {
     background-color: black;
 }
+main{
+    margin-top: 2%;
+}
 .form-control{
     border-radius: 0%;
 }

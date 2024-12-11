@@ -42,11 +42,12 @@ main{
 
 /* SEÇÃO PESQUISA */
 .pesquisa {
-    background-color: grey;
+    background-color: grey; 
     width: 100%; /* Ajuste para que a largura ocupe 100% do espaço disponível */
     max-width: 1314px; /* Defina um valor máximo para a largura */
     margin-left: auto;
     margin-right: auto;
+
     & .border {
         margin: 2% 0;
     }
@@ -63,12 +64,9 @@ main{
         border: 3px solid green;
         height: auto;
     }
-
-    & .input-group {
-        & .btn {
-            width: fit-content;
-        }
-    }
+}
+.pesquisa .input-group .btn {
+    width: fit-content;
 }
 
 .col-12 {
@@ -118,15 +116,55 @@ main{
     padding-top: 2%;
 }
 
-@media (min-width: 571px) and (max-width: 768px) {
+
+@media (max-width: 577px) {
     .pesquisa {
-        width: 764px;
+        width: 100%;
+        padding: 0 10px;
     }
+
+    .pesquisa .container {
+        border: none;
+    }
+
+    .pesquisa .input-group .btn {
+        width: 20%;
+    }
+
+    .busca-avancada-forms {
+        margin-top: 10px;
+    }
+
+    .col-12 .valores {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .col-12 .btn {
+        width: 100%;
+    }
+
     .botao-pesquisa {
-        width: 100%; /* Certifique-se de que o botão se ajuste corretamente */
+        width: 100%;
     }
+}
+
+@media (min-width: 578px) and (max-width: 768px) {
+    .pesquisa {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .pesquisa .input-group .btn {
+        width: 20%;
+    }
+
     .row .valores {
         margin-left: 10px;
         width: 47%;
+    }
+
+    .botao-pesquisa {
+        width: 100%;
     }
 }

@@ -130,6 +130,11 @@ main {
     max-width: 1314px;
     /* Defina um valor máximo para a largura */
 }
+.casas{
+    & .col-3{
+        height: fit-content;
+    }
+}
 
 @media (max-width: 577px) {
     .pesquisa {

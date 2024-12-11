@@ -1,0 +1,176 @@
+/* HTML */
+html body {
+    background-color: black;
+}
+
+main {
+    margin-top: 2%;
+}
+
+.form-control {
+    border-radius: 0%;
+}
+
+.btn {
+    border-radius: 0%;
+}
+
+/* NAVBAR */
+.divisao-navbar {
+    padding: 0;
+    margin: 0;
+    width: none;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+    & .container {
+        padding: 0;
+        margin: 0;
+        width: none;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    & .row {
+        padding: 0;
+        margin: 0;
+        width: none;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+/* SEÇÃO PESQUISA */
+.pesquisa {
+    background-color: grey;
+    width: 100%;
+    /* Ajuste para que a largura ocupe 100% do espaço disponível */
+    max-width: 1314px;
+    /* Defina um valor máximo para a largura */
+    margin-left: auto;
+    margin-right: auto;
+
+    & .border {
+        margin: 2% 0;
+    }
+
+    & .line .border {
+        margin: 0;
+    }
+
+    & .line {
+        padding: 0;
+    }
+
+    & .container {
+        border: 3px solid green;
+        height: auto;
+    }
+}
+
+.pesquisa .input-group .btn {
+    width: fit-content;
+}
+
+.col-12 {
+    & .container-md {
+        width: max-content;
+    }
+
+    & .navbar {
+        width: none;
+        height: 80%;
+    }
+}
+
+/* BUSCA AVANCADA FORMS */
+.busca-avancada-forms {
+    margin-top: 2%;
+}
+
+.col-12 {
+    & .btn {
+        width: 100%;
+    }
+}
+
+.col-12 {
+    & .valores {
+        width: 50%;
+    }
+
+}
+
+.col-12 {
+    padding-top: 1%;
+}
+
+/* LINHA PARTE INFERIROR */
+.form-control {
+    align-items: start;
+    align-content: center;
+    text-align: center;
+}
+
+/* BOTAO PESQUISA */
+.botao-pesquisa {
+    /* min-width: 510px;
+    max-width: 510px; */
+    padding-top: 2%;
+}
+
+
+@media (max-width: 577px) {
+    .pesquisa {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .pesquisa .container {
+        border: none;
+    }
+
+    .pesquisa .input-group .btn {
+        width: 20%;
+    }
+
+    .busca-avancada-forms {
+        margin-top: 10px;
+    }
+
+    .col-12 .valores {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .col-12 .btn {
+        width: 100%;
+    }
+
+    .botao-pesquisa {
+        width: 100%;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px) {
+    .pesquisa {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .pesquisa .input-group .btn {
+        width: 20%;
+    }
+
+    .row .valores {
+        margin-left: 10px;
+        width: 47%;
+    }
+
+    .botao-pesquisa {
+        width: 100%;
+    }
+}

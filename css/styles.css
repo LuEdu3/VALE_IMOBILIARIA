@@ -133,35 +133,3 @@ main{
         }
     }
 }
-
-/* Estilos para telas pequenas (móveis e tablets pequenos) */
-@media (max-width: 576px) {
-    & .pesquisa{
-        width: 764px;
-    }
-    & .botao-pesquisa {
-        width: 510px;
-    }
-    & .row {
-        & .valores {
-            margin-left: 10px;
-            align-content: center;
-            align-items: center;
-            width: 47%;
-        }
-    }
-}
-
-/* Estilos para telas médias (tablets e dispositivos com telas médias) */
-@media (min-width: 577px) and (max-width: 992px) {
-    .example {
-        background-color: lightgreen;
-    }
-}
-
-/* Estilos para telas grandes (desktop e monitores maiores) */
-@media (min-width: 993px) {
-    .example {
-        background-color: lightcoral;
-    }
-}

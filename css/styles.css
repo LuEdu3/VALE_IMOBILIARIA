@@ -131,9 +131,18 @@ main {
     /* Defina um valor máximo para a largura */
 }
 .casas{
-    & .col-3{
+    & .card-big{
+        width: fit;
+    }
+    & .card-imgtxt{
         height: fit-content;
     }
+    & .cards-pqn-linha{
+        margin-top: 2%;
+        /* width: 325px;
+        height: fit-content; */
+    }
+
 }
 
 @media (max-width: 577px) {

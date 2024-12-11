@@ -43,7 +43,8 @@ main{
 /* SEÇÃO PESQUISA */
 .pesquisa {
     background-color: grey;
-    width: 1314px;
+    width: 100%; /* Ajuste para que a largura ocupe 100% do espaço disponível */
+    max-width: 1314px; /* Defina um valor máximo para a largura */
     margin-left: auto;
     margin-right: auto;
     & .border {
@@ -118,18 +119,14 @@ main{
 }
 
 @media (min-width: 571px) and (max-width: 768px) {
-    & .pesquisa{
+    .pesquisa {
         width: 764px;
     }
-    & .botao-pesquisa {
-        width: 510px;
+    .botao-pesquisa {
+        width: 100%; /* Certifique-se de que o botão se ajuste corretamente */
     }
-    & .row {
-        & .valores {
-            margin-left: 10px;
-            align-content: center;
-            align-items: center;
-            width: 47%;
-        }
+    .row .valores {
+        margin-left: 10px;
+        width: 47%;
     }
 }

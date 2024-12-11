@@ -122,6 +122,14 @@ main {
     padding-top: 2%;
 }
 
+/* CASAS */
+.casas {
+    border: 10px solid white;
+    width: 100%;
+    /* Ajuste para que a largura ocupe 100% do espaço disponível */
+    max-width: 1314px;
+    /* Defina um valor máximo para a largura */
+}
 
 @media (max-width: 577px) {
     .pesquisa {

@@ -2,398 +2,270 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VALE IMOBILIÁRIA</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="shotcut icon" href="icons/LOGO_FUNDO-TRANSPARENTE.icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALE IMOBILIÁRIA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="icons/LOGO_FUNDO-TRANSPARENTE1.png">
 </head>
 
 <body>
-  <header>
-    <!-- NAVBAR -->
-    <!-- <div class="container"> -->
-      <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/LOGO_2.png" alt="Logo" width="30" height="26" class="d-inline-block align-text-top">
-            VALE IMOBILIÁRIA
-            <button class="bi bi-list" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-              aria-controls="offcanvasTop" aria-label="Menu"></button>
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                ...
-              </div>
+    <header>
+        <!-- NAVBAR -->
+        <section class="divisao-navbar">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/LOGO_2.png" alt="Logo" width="30" height="26"
+                                class="d-inline-block align-text-top">
+                            VALE IMOBILIÁRIA
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Anuncie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Favoritos</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Login
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Entrar</a></li>
+                                        <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </a>
+    </header>
+    <main>
 
-          <!-- OFFCANVAS NA NAVBAR -->
+        <!-- SEÇÃO PESQUISA -->
 
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Anuncie</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Favoritos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Entrar
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </nav>
-    <!-- </div> -->
-  </header>
-  <main>
-    <div class="conteudo-busca">
-      <div class="container">
-        <!-- PESQUISA -->
         <section class="pesquisa">
-          <p class="encontre">Encontre seu <strong>Imóvel</strong></p>
-          <div class="pesquisa-codigo">
-            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-            <button type="button" class="btn btn-warning">Buscar</button>
-          </div>
+            <div class="container">
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="line">
+                        <hr class="border border-primary border-3 opacity-75">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <span>Encontre seu Imóvel</span>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Referência">
+                            <button type="button" class="btn btn-warning">Buscar</button>
+                        </div>
+                    </div>
+
+                    <!-- BUSCA AVANCADA -->
+
+                    <hr class="border border-primary border-3 opacity-75">
+                    <div class="col-12 col-md-12">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container-md">
+                                <a class="navbar-brand text-start" href="#">Busca Avançada</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- ESTADO -->
+                    <div class="busca-avancada-forms">
+                        <div class="row align-items-center text-center text-md-start">
+
+                            <div class="col-12 col-md-3">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="*Estado">
+                                <datalist id="datalistOptions">
+                                    <option value="San Francisco">
+                                    <option value="New York">
+                                    <option value="Seattle">
+                                    <option value="Los Angeles">
+                                    <option value="Chicago">
+                                </datalist>
+                            </div>
+                            <!-- Cidade -->
+                            <div class="col-12 col-md-3">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="*Cidade">
+                                <datalist id="datalistOptions">
+                                    <option value="San Francisco">
+                                    <option value="New York">
+                                    <option value="Seattle">
+                                    <option value="Los Angeles">
+                                    <option value="Chicago">
+                                </datalist>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Qualquer Bairro
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- VALORES -->
+                            <div class="col-12 col-md-3">
+                                <div class="row align-items-center text-center text-md-start">
+                                    <input class="form-control valores" type="text" placeholder="Valor min."
+                                        aria-label="default input example">
+                                    <input class="form-control valores" type="text" placeholder="Valor máx"
+                                        data-mask="decimal" aria-label="default input example">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-inf">
+                            <div class="row align-items-center text-center text-md-start">
+                                <!-- VENDA -->
+                                <div class="col-12 col-md-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Venda
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- TIPO DE IMOVEL -->
+                                <div class="col-12 col-md-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        *Tipo de Imóvel
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- DORMITORIOS -->
+                                <div class="col-12 col-md-3">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Dormitórios
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- AREA MIN E MAX -->
+                                <div class="col-12 col-md-3">
+                                    <div class="row align-items-center text-center text-md-start">
+                                        <input class="form-control valores" type="text" placeholder="Área min."
+                                            aria-label="default input example">
+                                        <input class="form-control valores" type="text" placeholder="Área máx."
+                                            data-mask="decimal" aria-label="default input example">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <div class="col-md-3 col-sm-6 botao-pesquisa">
+                            <button type="button" class="btn btn-primary">Buscar Imóveis</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <!-- BUSCA AVANCADA TEXTO -->
-        <div class="espaco">
-          <div class="busca">
-            <strong>Busca Avançada</strong>
-          </div>
-        </div>
-
-
-        <!-- PESQUISA AVANÇADA -->
-        <section class="pesquisa-avancada">
-          <div class="container text-center">
-            <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-              <div class="col">
-                <div class="p-3">
-                  <!-- DROPDOWN -->
-                  <div class="btn-group dropdown-container">
-                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      *Estado
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Minas Gerais</a></li>
-                      <!-- <li><a class="dropdown-item" href="#">Acre</a></li>
-                      <li><a class="dropdown-item" href="#">Bahia</a></li>
-                      <li><a class="dropdown-item" href="#">Espírito Santos</a></li> -->
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="p-3">
-                  <!-- DROPDOWN -->
-                  <div class="btn-group dropdown-container">
-                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      *Cidade
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Ipatinga</a></li>
-                      <!-- <li><a class="dropdown-item" href="#">Option 2</a></li>
-                      <li><a class="dropdown-item" href="#">Option 3</a></li> -->
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-3">
-
-                  <!-- Botão que abre o Modal 1 -->
-                  <button type="button" class="btn btn-secondary btn-lg dropdown-toggle bairro-button"
-                    data-bs-toggle="modal" data-bs-target="#modal1">
-                    Qualquer Bairro
-                  </button>
-
-                  <!-- Modal 1 -->
-                  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="modal1Label">Selecione as opçoes desejadas</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Bethânia" id="check1A">
-                            <label class="form-check-label" for="check1A">Bethânia</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Canaã" id="check1B">
-                            <label class="form-check-label" for="check1B">Canaã</label>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-warning clear-selection">Limpar</button>
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                          <button type="button" class="btn btn-primary save-changes">Salvar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="p-3">
-
-                  <!-- Botão que abre o Modal 2 -->
-                  <button type="button" class="btn btn-secondary btn-lg dropdown-toggle bairro-button"
-                    data-bs-toggle="modal" data-bs-target="#modal2">
-                    Venda
-                  </button>
-
-                  <!-- Modal 2 -->
-                  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="modal2Label">Selecione as opções desejadas</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Venda" id="check2A">
-                            <label class="form-check-label" for="check2A">Venda</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Locação" id="check2B">
-                            <label class="form-check-label" for="check2B">Locação</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Locação Temporada" id="check3B">
-                            <label class="form-check-label" for="check2C">Locação Temporada</label>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-warning clear-selection">Limpar</button>
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                          <button type="button" class="btn btn-primary save-changes">Salvar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-3">
-
-                  <!-- Botão que abre o Modal 3 -->
-                  <button type="button" class="btn btn-secondary btn-lg dropdown-toggle bairro-button"
-                    data-bs-toggle="modal" data-bs-target="#modal3">
-                    Tipo de Imóvel
-                  </button>
-
-                  <!-- Modal 3 -->
-                  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="modal3Label">Selecione as opçoes desejadas</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Apartamento" id="check3A">
-                            <label class="form-check-label" for="check3A">Apartamento</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Casa" id="check3B">
-                            <label class="form-check-label" for="check3B">Casa</label>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-warning clear-selection">Limpar</button>
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                          <button type="button" class="btn btn-primary save-changes">Salvar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="p-3">
-
-                  <!-- Botão que abre o Modal 4 -->
-                  <button type="button" class="btn btn-secondary btn-lg dropdown-toggle bairro-button"
-                    data-bs-toggle="modal" data-bs-target="#modal4">
-                    Dormitórios
-                  </button>
-
-                  <!-- Modal 4 -->
-                  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="modal4Label">Selecione os Bairros 4</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="1 dormitório" id="check4A">
-                            <label class="form-check-label" for="check4A">1 dormitório</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="2 dormitórios" id="check4B">
-                            <label class="form-check-label" for="check4B">2 dormitórios</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="3 dormitórios" id="check4C">
-                            <label class="form-check-label" for="check4C">3 dormitórios</label>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-warning clear-selection">Limpar</button>
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                          <button type="button" class="btn btn-primary save-changes">Salvar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- BOTAO BUSCAR -->
-        <div class="botao-encontrar">
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary btn-lg me-md-2" type="button">Buscar<i class="bi bi-search"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="destaques">
-      <!-- SAO 2 COLUNAS,E UMA LINHA, DENTRO DELA SAO MAIS 2 LINHAS -->
-      <!-- 2 LINHAS -->
-      <!-- DEFINIR ALTURA E LARGURA -->
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/imagem_para_destaque1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/imagem_para_destaque2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/imagem_para_destaque3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </main>
+    </main>
 </body>
-<!-- LINKANDO JS BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-
-  // Adiciona evento a todos os dropdowns na página
-  document.querySelectorAll('.dropdown-container').forEach(dropdown => {
-    const button = dropdown.querySelector('.dropdown-toggle');
-    const items = dropdown.querySelectorAll('.dropdown-item');
-
-    items.forEach(item => {
-      item.addEventListener('click', (e) => {
-        e.preventDefault(); // Evita que a página recarregue ao clicar no link
-        button.textContent = item.textContent; // Atualiza o texto do botão
-      });
-    });
-  });
-</script>
-
-<script>
-  // Adicionar evento de salvar
-  document.querySelectorAll('.save-changes').forEach((button) => {
-    button.addEventListener('click', (event) => {
-      const modal = event.target.closest('.modal');
-      const checkboxes = modal.querySelectorAll('.form-check-input:checked');
-      const selectedValues = Array.from(checkboxes).map((checkbox) => checkbox.value);
-
-      // Atualizar o botão correspondente
-      const modalId = modal.id;
-      const bairroButton = document.querySelector(`[data-bs-target="#${modalId}"]`);
-      bairroButton.textContent = selectedValues.length > 0 ? selectedValues.join(", ") : "Qualquer Bairro";
-
-      // Fechar o modal
-      const bsModal = bootstrap.Modal.getInstance(modal);
-      bsModal.hide();
-    });
-  });
-
-  // Adicionar evento de limpar
-  document.querySelectorAll('.clear-selection').forEach((button) => {
-    button.addEventListener('click', (event) => {
-      const modal = event.target.closest('.modal');
-      const checkboxes = modal.querySelectorAll('.form-check-input');
-      checkboxes.forEach((checkbox) => (checkbox.checked = false));
-
-      // Atualizar o botão correspondente
-      const modalId = modal.id;
-      const bairroButton = document.querySelector(`[data-bs-target="#${modalId}"]`);
-      bairroButton.textContent = "Qualquer Bairro";
-    });
-  });
-</script>
-<script src="js/script.js"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </html>

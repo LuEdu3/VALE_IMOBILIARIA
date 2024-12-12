@@ -133,20 +133,27 @@ main {
 
             /* CUSTOMIZACAO PARA ALINHAMENTO CASAS */
 .casas{
+    background-color: grey  ;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     align-items: center;
     align-content: center;
 }
 .casas{
-    & .texto-cima-cards{}
-    & .lancamentos{
+    & .texto-cima-cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .lancamentos h3{
+        margin: 12px 0 5px;
     }
     & .ver-todos{
+        text-align: end;
         width: fit-content;
     }
+    
 }
         /* CUSTOMIZACAO CARDS E IMAGENS  */
 .casas{

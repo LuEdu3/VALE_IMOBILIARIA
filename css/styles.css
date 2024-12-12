@@ -1,6 +1,6 @@
 /* HTML */
 html body {
-    background-color: black;
+    /* background-color: black; */
 }
 
 main {
@@ -139,6 +139,14 @@ main {
     text-align: center;
     align-items: center;
     align-content: center;
+}
+.casas{
+    & .texto-cima-cards{}
+    & .lancamentos{
+    }
+    & .ver-todos{
+        width: fit-content;
+    }
 }
         /* CUSTOMIZACAO CARDS E IMAGENS  */
 .casas{

@@ -1,6 +1,6 @@
 /* HTML */
 html body {
-    /* background-color: black; */
+    background-color: black;
 }
 
 main {
@@ -129,6 +129,14 @@ main {
     /* Ajuste para que a largura ocupe 100% do espaço disponível */
     max-width: 1314px;
     /* Defina um valor máximo para a largura */
+}
+.casas{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 .casas{
     & .card-big{

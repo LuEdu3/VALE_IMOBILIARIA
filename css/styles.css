@@ -151,9 +151,12 @@ main {
     }
     & .ver-todos{
         text-align: end;
-        width: fit-content;
     }
-    
+}
+.ver-todos .btn{
+    width: fit-content;
+    padding: 0;
+    margin: 0;
 }
         /* CUSTOMIZACAO CARDS E IMAGENS  */
 .casas{

@@ -130,6 +130,8 @@ main {
     max-width: 1314px;
     /* Defina um valor máximo para a largura */
 }
+
+            /* CUSTOMIZACAO PARA ALINHAMENTO CASAS */
 .casas{
     margin-top: 2%;
     margin-left: auto;
@@ -138,6 +140,7 @@ main {
     align-items: center;
     align-content: center;
 }
+        /* CUSTOMIZACAO CARDS E IMAGENS  */
 .casas{
     & .card-big{
         width: fit;
@@ -161,6 +164,7 @@ main {
         border-radius: 0%;
         
     }
+    /* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
 }
 .card-pequeno:hover{
     filter: drop-shadow(0px 0px 12px grey);

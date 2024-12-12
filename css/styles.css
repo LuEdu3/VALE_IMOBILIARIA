@@ -1,6 +1,6 @@
 /* HTML */
 html body {
-    background-color: black;
+    /* background-color: black; */
 }
 
 main {
@@ -149,7 +149,16 @@ main {
         max-width: 288px;
         max-height: 225,19px;
     }
-
+    & .card-pequeno{
+        border-radius: 0%;
+        
+    }
+}
+.card-pequeno:hover{
+    filter: drop-shadow(0px 0px 12px grey);
+}
+.imagem-card-pqn:hover{
+    filter: drop-shadow(0px 0px 12px grey);
 }
 
 @media (max-width: 577px) {

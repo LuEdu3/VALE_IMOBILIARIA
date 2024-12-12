@@ -142,6 +142,13 @@ main {
         /* width: 325px;
         height: fit-content; */
     }
+    & .imagem-card-pqn{
+        padding: 0px;
+        width: 288px;
+        height: 225,19px;
+        max-width: 288px;
+        max-height: 225,19px;
+    }
 
 }
 

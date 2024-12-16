@@ -131,69 +131,78 @@ main {
     /* Defina um valor máximo para a largura */
 }
 
-            /* CUSTOMIZACAO PARA ALINHAMENTO CASAS */
-.casas{
-    background-color: grey  ;
+/* CUSTOMIZACAO PARA ALINHAMENTO CASAS */
+.casas {
+    background-color: grey;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     align-content: center;
 }
-.casas{
-    & .texto-cima-cards{
+
+.casas {
+    & .texto-cima-cards {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    & .lancamentos h3{
+
+    & .lancamentos h3 {
         margin: 12px 0 5px;
     }
-    & .ver-todos{
+
+    & .ver-todos {
         text-align: end;
     }
 }
-.ver-todos .btn{
+
+.ver-todos .btn {
     width: fit-content;
     padding: 0;
     margin: 0;
 }
-        /* CUSTOMIZACAO CARDS E IMAGENS  */
-.casas{
-    & .card-big{
+
+/* CUSTOMIZACAO CARDS E IMAGENS  */
+.casas {
+    & .card-big {
         width: fit;
     }
-    & .card-imgtxt{
+
+    & .card-imgtxt {
         height: fit-content;
     }
-    & .cards-pqn-linha{
+
+    & .cards-pqn-linha {
         margin-top: 2%;
         /* width: 325px;
         height: fit-content; */
     }
-    & .imagem-card-pqn{
+
+    & .imagem-card-pqn {
         padding: 0px;
         width: 288px;
-        height: 225,19px;
+        height: 225, 19px;
         max-width: 288px;
-        max-height: 225,19px;
-    }
-    & .card-pequeno{
-        border-radius: 0%;
-    }
-    /* ICONES */
-    & .icone-cama{
-        border: 1px solid black;
-    }
-    .destalhes{
-        & .objetos
+        max-height: 225, 19px;
     }
 
+    & .card-pequeno {
+        border-radius: 0%;
+    }
+
+    /* ICONES */
+    & .icone-cama {
+        border: 1px solid black;
+    }
+}
+
 /* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
-.card-pequeno:hover{
+.card-pequeno:hover {
     filter: drop-shadow(0px 0px 12px grey);
 }
-.imagem-card-pqn:hover{
+
+.imagem-card-pqn:hover {
     filter: drop-shadow(0px 0px 12px grey);
 }
 

@@ -221,6 +221,14 @@ main {
 
     }
 }
+.objeto-valores{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font: bold 30px;
+}
 
 /* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
 .card-pequeno:hover {

@@ -181,7 +181,11 @@ main {
     & .card-pequeno{
         border-radius: 0%;
     }
-}
+    /* ICONES */
+    & .icone-cama{
+        border: 1px solid black;
+    }
+
 /* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
 .card-pequeno:hover{
     filter: drop-shadow(0px 0px 12px grey);

@@ -190,17 +190,35 @@ main {
     & .card-pequeno {
         border-radius: 0%;
     }
+}
 
-    /* ICONES */
-    & .icone-cama {
+/* ICONES */
+.detalhes {
+    display: flex;
+
+    & .objeto {
+        width: fit-content;
         border: 1px solid black;
+        border-radius: 2%;
+        margin-right: 3%;
+        padding: 1px 5px;
     }
 }
 
-.detalhes {
-    display: flex;
-    & .objeto {
-        width: fit-content;
+.objeto {
+    & .material-symbols-outlined {
+        width: 30px;
+        height: 30px;
+        text-size-adjust: 100%;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    & .numero {
+
+        margin: 5px 0 0 5px;
+
     }
 }
 

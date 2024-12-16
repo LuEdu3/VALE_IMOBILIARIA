@@ -182,10 +182,6 @@ main {
         border-radius: 0%;
         
     }
-
-    & .card-info-maior{
-        padding: 0px !important;
-    }
 }
 /* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
 .card-pequeno:hover{

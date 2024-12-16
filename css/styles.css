@@ -185,6 +185,9 @@ main {
     & .icone-cama{
         border: 1px solid black;
     }
+    .destalhes{
+        & .objetos
+    }
 
 /* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
 .card-pequeno:hover{

@@ -168,28 +168,6 @@ main {
     & .card-big {
         width: fit;
     }
-
-    & .card-imgtxt {
-        height: fit-content;
-    }
-
-    & .cards-pqn-linha {
-        margin-top: 2%;
-        /* width: 325px;
-        height: fit-content; */
-    }
-
-    & .imagem-card-pqn {
-        padding: 0px;
-        width: 288px;
-        height: 225, 19px;
-        max-width: 288px;
-        max-height: 225, 19px;
-    }
-
-    & .card-pequeno {
-        border-radius: 0%;
-    }
 }
 
 /* ICONES */
@@ -230,17 +208,6 @@ main {
     font-size: 20px;
     font: bold 30px;
 }
-
-/* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
-.card-pequeno:hover {
-    filter: drop-shadow(0px 0px 12px grey);
-}
-
-.imagem-card-pqn:hover {
-    filter: drop-shadow(0px 0px 12px grey);
-}
-
-
 
 @media (max-width: 577px) {
     .pesquisa {

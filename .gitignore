@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.env
+
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# Outros arquivos comuns
+.DS_Store
+Thumbs.db

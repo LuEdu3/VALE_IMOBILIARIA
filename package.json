@@ -1,0 +1,15 @@
+{
+  "name": "vale_imobiliaria",
+  "version": "1.0.0",
+  "description": "Servidor Node.js para servir arquivos estáticos do site Vale Imobiliária",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.14.1"
+  }
+}

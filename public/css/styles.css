@@ -1,303 +1,170 @@
-/* HTML */
-html body {
-    /* background-color: black; */
+/* --- CONFIGURAÇÕES GLOBAIS E FONTES --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Um cinza muito claro */
 }
 
-main {
-    margin-top: 2%;
+/* --- ESTILOS DA SEÇÃO DE PESQUISA --- */
+.pesquisa-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.form-control {
-    border-radius: 0%;
+.pesquisa-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.btn {
-    border-radius: 0%;
+.pesquisa-section .form-control,
+.pesquisa-section .form-select,
+.pesquisa-section .btn {
+    border-radius: 0.25rem; /* Bordas suavemente arredondadas */
 }
 
-/* NAVBAR */
-.divisao-navbar {
-    padding: 0;
-    margin: 0;
-    width: none;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-
-    & .container {
-        padding: 0;
-        margin: 0;
-        width: none;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    & .row {
-        padding: 0;
-        margin: 0;
-        width: none;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
+/* --- ESTILOS DA SEÇÃO DE LANÇAMENTOS --- */
+.lancamentos-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-/* SEÇÃO PESQUISA */
-.pesquisa {
-    background-color: grey;
-    width: 100%;
-    /* Ajuste para que a largura ocupe 100% do espaço disponível */
-    max-width: 1314px;
-    /* Defina um valor máximo para a largura */
-    margin-left: auto;
-    margin-right: auto;
-
-    & .border {
-        margin: 2% 0;
-    }
-
-    & .line .border {
-        margin: 0;
-    }
-
-    & .line {
-        padding: 0;
-    }
-
-    & .container {
-        border: 3px solid green;
-        height: auto;
-    }
+.property-card, .property-card-small {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem se ajuste às bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pesquisa .input-group .btn {
-    width: fit-content;
+.property-card:hover, .property-card-small:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.col-12 {
-    & .container-md {
-        width: max-content;
-    }
-
-    & .navbar {
-        width: none;
-        height: 80%;
-    }
+.property-card .card-img-top {
+    height: 280px;
+    object-fit: cover;
 }
 
-/* BUSCA AVANCADA FORMS */
-.busca-avancada-forms {
-    margin-top: 2%;
+.property-card .card-body {
+    padding: 1.5rem;
 }
 
-.col-12 {
-    & .btn {
-        width: 100%;
-    }
+.property-card .card-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem 1.5rem;
 }
 
-.col-12 {
-    & .valores {
-        width: 50%;
-    }
-
-}
-
-.col-12 {
-    padding-top: 1%;
-}
-
-/* LINHA PARTE INFERIROR */
-.form-control {
-    align-items: start;
-    align-content: center;
-    text-align: center;
-}
-
-/* BOTAO PESQUISA */
-.botao-pesquisa {
-    /* min-width: 510px;
-    max-width: 510px; */
-    padding-top: 2%;
-}
-
-/* CASAS */
-.casas {
-    border: 10px solid white;
-    width: 100%;
-    /* Ajuste para que a largura ocupe 100% do espaço disponível */
-    max-width: 1314px;
-    /* Defina um valor máximo para a largura */
-}
-
-/* CUSTOMIZACAO PARA ALINHAMENTO CASAS */
-.casas {
-    background-color: grey;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    align-content: center;
-}
-
-.casas {
-    & .texto-cima-cards {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    & .lancamentos h3 {
-        margin: 12px 0 5px;
-    }
-
-    & .ver-todos {
-        text-align: end;
-    }
-}
-
-.ver-todos .btn {
-    width: fit-content;
-    padding: 0;
-    margin: 0;
-}
-
-/* CUSTOMIZACAO CARDS E IMAGENS  */
-.casas {
-    & .card-big {
-        width: fit;
-    }
-}
-
-/* ICONES */
-.detalhes {
-    display: flex; 
-    height: 30px;
-
-    & .objeto {
-        width: fit-content;
-        border: 1.5px solid black;
-        border-radius: 10%;
-        margin-right: 3%;
-        padding: 1px 5px;
-    }
-}
-
-.objeto {
-    & .material-symbols-outlined {
-        width: 30px;
-        height: 30px;
-        text-size-adjust: 100%;
-        align-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    & .numero {
-        height: auto;
-        margin: 5px 0 0 5px;
-
-    }
-}
-.objeto-valores{
-    text-align: center;
-    align-content: center;
-    align-items: center;
+/* Detalhes do imóvel (ícones) */
+.property-details {
     display: flex;
-    font-size: 20px;
-    font: bold 30px;
-}
-& .card-imgtxt {
-    height: fit-content;
-}
-
-& .cards-pqn-linha {
-    margin-top: 2%;
-    /* width: 325px;
-    height: fit-content; */
+    gap: 1.2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    color: #495057;
 }
 
-& .imagem-card-pqn {
-    padding: 0px;
-    width: 288px;
-    height: 225, 19px;
-    max-width: 288px;
-    max-height: 225, 19px;
+.property-details .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-& .card-pequeno {
-    border-radius: 0%;
+.property-details .material-symbols-outlined {
+    font-size: 1.5rem;
+    font-variation-settings: 'FILL' 1, 'wght' 300;
 }
 
-.agrupamento-foto-card-um{
-display: flex;
-height: auto;
-}
-.imagem-card-pqn .card-body{
-}
-.agrupamento-foto-card-dois{
-display: flex;
+.property-price {
+    font-weight: 700;
+    color: #0d6efd; /* Azul primário do Bootstrap */
+    margin: 0;
 }
 
-
-/* SOMBRA QUANDO PASSA O MOUSE EM CIMA DAS CASAS E DO CARD */
-.card-pequeno:hover {
-filter: drop-shadow(0px 0px 12px grey);
+/* Estilos para os cards menores */
+.property-card-small .img-fluid {
+    height: 100%;
+    object-fit: cover;
 }
 
-.imagem-card-pqn:hover {
-filter: drop-shadow(0px 0px 12px grey);
+.property-card-small .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
-@media (max-width: 577px) {
-    .pesquisa {
+.property-price-small {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0d6efd;
+    margin-bottom: 0.5rem;
+}
+
+.property-details-small {
+    display: flex;
+    gap: 1rem;
+    color: #495057;
+}
+
+.property-details-small .detail-item {
+     display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.property-details-small .material-symbols-outlined {
+    font-size: 1.2rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+/* Tablets (md) */
+@media (max-width: 992px) {
+    .pesquisa-container {
+        padding: 1.5rem;
+    }
+
+    .lancamentos-section .property-card .card-img-top {
+        height: 220px;
+    }
+}
+
+/* Celulares (sm) */
+@media (max-width: 767px) {
+    .pesquisa-section .row > div {
+        text-align: center;
+    }
+
+    .pesquisa-section .d-flex.justify-content-end {
+        justify-content: center !important;
         width: 100%;
-        padding: 0 10px;
     }
-
-    .pesquisa .container {
-        border: none;
-    }
-
-    .pesquisa .input-group .btn {
-        width: 20%;
-    }
-
-    .busca-avancada-forms {
-        margin-top: 10px;
-    }
-
-    .col-12 .valores {
+    .pesquisa-section .btn-lg {
         width: 100%;
-        margin-bottom: 10px;
     }
-
-    .col-12 .btn {
+    
+    .lancamentos-section .d-flex.justify-content-between {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0.5rem;
+    }
+    
+    .property-card-small .col-sm-5,
+    .property-card-small .col-sm-7 {
         width: 100%;
     }
 
-    .botao-pesquisa {
-        width: 100%;
-    }
-}
-
-@media (min-width: 578px) and (max-width: 768px) {
-    .pesquisa {
-        width: 100%;
-        padding: 0 10px;
+    .property-card-small .img-fluid {
+        height: 200px;
+        border-radius: 8px 8px 0 0 !important;
     }
 
-    .pesquisa .input-group .btn {
-        width: 20%;
-    }
-
-    .row .valores {
-        margin-left: 10px;
-        width: 47%;
-    }
-
-    .botao-pesquisa {
-        width: 100%;
+    .property-card-small .card-body {
+        text-align: left;
+        padding-top: 1rem;
     }
 }

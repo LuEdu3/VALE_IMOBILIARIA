@@ -72,178 +72,162 @@
           </div>
         </div>
 
-        <hr>
-
-        <h3 class="h5 mt-4">Busca Avançada</h3>
-        <form action="#" method="GET">
-          <div class="row g-3 mt-2">
-            <div class="col-md-6 col-lg-3">
-              <label for="bairro" class="form-label">Bairro</label>
-              <select class="form-select" id="bairro" name="bairro">
-                <option value="">Todos</option>
-                <option>Centro</option>
-                <option>Horto</option>
-                <option>Veneza</option>
-                <option>Imbaúbas</option>
-                <option>Cariru</option>
-                <option>Bom Retiro</option>
-                <option>Jardim Panorama</option>
-                <option>Ideal</option>
-                <option>Esperança</option>
-                <option>Canaã</option>
-                <option>Betânia</option>
-                <option>Iguaçu</option>
-                <option>Ferroviários</option>
-                <option>Jardim das Oliveiras</option>
-                <option>Vila Celeste</option>
-                <option>Vila Militar</option>
-              </select>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <label for="tipo" class="form-label">Tipo de Imóvel</label>
-              <select class="form-select" id="tipo" name="tipo">
-                <option value="">Todos</option>
-                <option>Apartamento</option>
-                <option>Casa</option>
-                <option>Kitnet</option>
-                <option>Cobertura</option>
-                <option>Terreno</option>
-                <option>Loja</option>
-                <option>Sala Comercial</option>
-                <option>Galpão</option>
-              </select>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <label for="faixa_preco" class="form-label">Faixa de Preço</label>
-              <select class="form-select" id="faixa_preco" name="faixa_preco">
-                <option value="">Todas</option>
-                <option>Até R$ 150.000</option>
-                <option>R$ 150.000 a R$ 300.000</option>
-                <option>R$ 300.000 a R$ 500.000</option>
-                <option>R$ 500.000 a R$ 800.000</option>
-                <option>Acima de R$ 800.000</option>
-              </select>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <label for="quartos" class="form-label">Quartos</label>
-              <select class="form-select" id="quartos" name="quartos">
-                <option value="">Qualquer</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
-              </select>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <label for="banheiros" class="form-label">Banheiros</label>
-              <select class="form-select" id="banheiros" name="banheiros">
-                <option value="">Qualquer</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3+</option>
-              </select>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <label for="vagas" class="form-label">Vagas de Garagem</label>
-              <select class="form-select" id="vagas" name="vagas">
-                <option value="">Qualquer</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3+</option>
-              </select>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <label for="finalidade" class="form-label">Finalidade</label>
-              <select class="form-select" id="finalidade" name="finalidade">
-                <option value="">Todas</option>
-                <option>Residencial</option>
-                <option>Comercial</option>
-              </select>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-12 d-flex justify-content-end">
-              <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="lancamentos-section">
-      <div class="container">
+    <section class="lancamentos-e-busca container my-5">
+      <div class="row">
+        <!-- Lista de Lançamentos/Publicações -->
+        <div class="col-lg-8 order-2 order-lg-1">
           <div class="d-flex justify-content-between align-items-center mb-2">
             <h2 class="h3">Lançamentos</h2>
             <a href="#" class="btn btn-outline-primary">Ver todos <i class="bi bi-plus-lg"></i></a>
           </div>
           <hr>
           <div class="row g-4 mt-2">
-              <div class="col-lg-6">
-                  <div class="card property-card h-100 shadow-sm">
-                      <img src="images/imagem_para_destaque1.jpg" class="card-img-top" alt="Casa de destaque">
-                      <div class="card-body">
-                          <h5 class="card-title">Casa Sobrado no Bairro da Velha</h5>
-                          <p class="card-text text-muted">Blumenau, SC</p>
-                          <div class="property-details">
-                              <span class="detail-item"><i class="material-symbols-outlined">hotel</i> 3</span>
-                              <span class="detail-item"><i class="material-symbols-outlined">shower</i> 2</span>
-                              <span class="detail-item"><i class="material-symbols-outlined">directions_car</i> 2</span>
-                              <span class="detail-item"><i class="material-symbols-outlined">square_foot</i> 120m²</span>
-                          </div>
-                      </div>
-                      <div class="card-footer bg-white">
-                        <div class="d-flex justify-content-between align-items-center">
-                           <h4 class="property-price">R$ 680.000,00</h4>
-                           <a href="#" class="btn btn-primary">Ver detalhes</a>
-                        </div>
-                      </div>
+            <!-- Publicação 1 -->
+            <div class="col-12 mb-3">
+              <div class="card property-card flex-row">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Casa no Horto, Ipatinga-MG">
+                <div class="card-body">
+                  <h5 class="card-title">Casa ampla no Horto</h5>
+                  <p class="card-text">Casa 4 quartos, 3 banheiros, 2 vagas, Horto, Ipatinga-MG. Área gourmet e quintal espaçoso.</p>
+                  <div class="property-details">
+                    <span class="detail-item"><i class="bi bi-house"></i> 4 quartos</span>
+                    <span class="detail-item"><i class="bi bi-badge-wc"></i> 3 banheiros</span>
+                    <span class="detail-item"><i class="bi bi-car-front"></i> 2 vagas</span>
                   </div>
+                  <p class="property-price mt-2">R$ 750.000</p>
+                </div>
               </div>
-              <div class="col-lg-6">
-                  <div class="row g-4">
-                      <div class="col-12">
-                          <div class="card property-card-small shadow-sm">
-                              <div class="row g-0">
-                                  <div class="col-sm-5">
-                                      <img src="images/imagem_para_destaque2.jpg" class="img-fluid rounded-start" alt="Apartamento">
-                                  </div>
-                                  <div class="col-sm-7">
-                                      <div class="card-body">
-                                        <h5 class="card-title">Apartamento Central</h5>
-                                        <p class="card-text text-muted">Centro, Blumenau</p>
-                                        <p class="property-price-small">R$ 450.000,00</p>
-                                        <div class="property-details-small">
-                                            <span class="detail-item"><i class="material-symbols-outlined">hotel</i> 2</span>
-                                            <span class="detail-item"><i class="material-symbols-outlined">shower</i> 1</span>
-                                            <span class="detail-item"><i class="material-symbols-outlined">directions_car</i> 1</span>
-                                        </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-12">
-                           <div class="card property-card-small shadow-sm">
-                              <div class="row g-0">
-                                  <div class="col-sm-5">
-                                      <img src="images/imagem_para_destaque2.jpg" class="img-fluid rounded-start" alt="Terreno">
-                                  </div>
-                                  <div class="col-sm-7">
-                                      <div class="card-body">
-                                        <h5 class="card-title">Terreno Amplo</h5>
-                                        <p class="card-text text-muted">Itoupava Norte, Blumenau</p>
-                                        <p class="property-price-small">R$ 320.000,00</p>
-                                         <div class="property-details-small">
-                                            <span class="detail-item"><i class="material-symbols-outlined">square_foot</i> 450m²</span>
-                                        </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+            </div>
+            <!-- Publicação 2 -->
+            <div class="col-12 mb-3">
+              <div class="card property-card flex-row">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Casa no Veneza, Ipatinga-MG">
+                <div class="card-body">
+                  <h5 class="card-title">Casa moderna no Veneza</h5>
+                  <p class="card-text">Casa 3 quartos, 2 banheiros, 1 vaga, Veneza, Ipatinga-MG. Próxima a escolas e comércio.</p>
+                  <div class="property-details">
+                    <span class="detail-item"><i class="bi bi-house"></i> 3 quartos</span>
+                    <span class="detail-item"><i class="bi bi-badge-wc"></i> 2 banheiros</span>
+                    <span class="detail-item"><i class="bi bi-car-front"></i> 1 vaga</span>
                   </div>
+                  <p class="property-price mt-2">R$ 480.000</p>
+                </div>
               </div>
+            </div>
+            <!-- Publicação 3 -->
+            <div class="col-12 mb-3">
+              <div class="card property-card flex-row">
+                <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Casa no Bom Retiro, Ipatinga-MG">
+                <div class="card-body">
+                  <h5 class="card-title">Casa aconchegante no Bom Retiro</h5>
+                  <p class="card-text">Casa 2 quartos, 1 banheiro, 1 vaga, Bom Retiro, Ipatinga-MG. Ideal para famílias pequenas.</p>
+                  <div class="property-details">
+                    <span class="detail-item"><i class="bi bi-house"></i> 2 quartos</span>
+                    <span class="detail-item"><i class="bi bi-badge-wc"></i> 1 banheiro</span>
+                    <span class="detail-item"><i class="bi bi-car-front"></i> 1 vaga</span>
+                  </div>
+                  <p class="property-price mt-2">R$ 320.000</p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <!-- Busca Avançada -->
+        <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
+          <aside class="busca-avancada-sidebar">
+            <div class="pesquisa-container">
+              <h3 class="h5 mb-3">Busca Avançada</h3>
+              <form action="#" method="GET">
+                <div class="mb-3">
+                  <label for="bairro" class="form-label">Bairro</label>
+                  <select class="form-select" id="bairro" name="bairro">
+                    <option value="">Todos</option>
+                    <option>Centro</option>
+                    <option>Horto</option>
+                    <option>Veneza</option>
+                    <option>Imbaúbas</option>
+                    <option>Cariru</option>
+                    <option>Bom Retiro</option>
+                    <option>Jardim Panorama</option>
+                    <option>Ideal</option>
+                    <option>Esperança</option>
+                    <option>Canaã</option>
+                    <option>Betânia</option>
+                    <option>Iguaçu</option>
+                    <option>Ferroviários</option>
+                    <option>Jardim das Oliveiras</option>
+                    <option>Vila Celeste</option>
+                    <option>Vila Militar</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="tipo" class="form-label">Tipo de Imóvel</label>
+                  <select class="form-select" id="tipo" name="tipo">
+                    <option value="">Todos</option>
+                    <option>Apartamento</option>
+                    <option>Casa</option>
+                    <option>Kitnet</option>
+                    <option>Cobertura</option>
+                    <option>Terreno</option>
+                    <option>Loja</option>
+                    <option>Sala Comercial</option>
+                    <option>Galpão</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="faixa_preco" class="form-label">Faixa de Preço</label>
+                  <select class="form-select" id="faixa_preco" name="faixa_preco">
+                    <option value="">Todas</option>
+                    <option>Até R$ 150.000</option>
+                    <option>R$ 150.000 a R$ 300.000</option>
+                    <option>R$ 300.000 a R$ 500.000</option>
+                    <option>R$ 500.000 a R$ 800.000</option>
+                    <option>Acima de R$ 800.000</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="quartos" class="form-label">Quartos</label>
+                  <select class="form-select" id="quartos" name="quartos">
+                    <option value="">Qualquer</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="banheiros" class="form-label">Banheiros</label>
+                  <select class="form-select" id="banheiros" name="banheiros">
+                    <option value="">Qualquer</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="vagas" class="form-label">Vagas de Garagem</label>
+                  <select class="form-select" id="vagas" name="vagas">
+                    <option value="">Qualquer</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="finalidade" class="form-label">Finalidade</label>
+                  <select class="form-select" id="finalidade" name="finalidade">
+                    <option value="">Todas</option>
+                    <option>Residencial</option>
+                    <option>Comercial</option>
+                  </select>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
+                </div>
+              </form>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
 

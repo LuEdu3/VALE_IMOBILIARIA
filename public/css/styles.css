@@ -120,6 +120,96 @@ body {
     font-size: 1.2rem;
 }
 
+/* --- SIDEBAR DE BUSCA AVANÇADA --- */
+.busca-avancada-sidebar {
+    position: sticky;
+    top: 2rem;
+    z-index: 2;
+    max-width: 350px;
+    margin-left: auto;
+}
+
+.pesquisa-container {
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    width: 100%;
+    max-width: 350px;
+}
+
+.busca-avancada-sidebar .form-label {
+    font-size: 0.98rem;
+    font-weight: 500;
+}
+
+.busca-avancada-sidebar .form-select {
+    font-size: 0.97rem;
+    padding: 0.4rem 0.75rem;
+}
+
+.busca-avancada-sidebar .btn-lg {
+    font-size: 1rem;
+    padding: 0.6rem 0;
+}
+
+/* --- LISTA DE LANÇAMENTOS --- */
+.lancamentos-e-busca .property-card {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 110px;
+}
+
+.lancamentos-e-busca .property-card .card-img-top {
+    width: 110px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+    flex-shrink: 0;
+}
+
+.lancamentos-e-busca .property-card .card-body {
+    padding: 0.7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lancamentos-e-busca .property-details {
+    gap: 0.7rem;
+    font-size: 0.92rem;
+}
+
+.lancamentos-e-busca .property-price {
+    font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+    .lancamentos-e-busca .property-card {
+        max-width: 100%;
+    }
+    .lancamentos-e-busca .property-card .card-img-top {
+        width: 80px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 767px) {
+    .lancamentos-e-busca .property-card {
+        flex-direction: column;
+        min-height: unset;
+    }
+    .lancamentos-e-busca .property-card .card-img-top {
+        width: 100%;
+        height: 90px;
+        border-radius: 8px 8px 0 0;
+    }
+}
+
 /* --- RESPONSIVIDADE --- */
 
 /* Tablets (md) */
@@ -166,5 +256,25 @@ body {
     .property-card-small .card-body {
         text-align: left;
         padding-top: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .busca-avancada-sidebar, .pesquisa-container {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .lancamentos-e-busca .property-card .card-img-top {
+        height: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    .lancamentos-e-busca .row {
+        flex-direction: column-reverse;
+    }
+    .busca-avancada-sidebar, .pesquisa-container {
+        max-width: 100%;
+        margin-bottom: 2rem;
     }
 }

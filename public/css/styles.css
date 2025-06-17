@@ -15,6 +15,11 @@ body {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    min-width: 320px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .pesquisa-section .form-control,
@@ -138,19 +143,60 @@ body {
     max-width: 350px;
 }
 
+/* --- BUSCA AVANÇADA: COR, BORDAS E SOMBRA --- */
+.busca-avancada-sidebar .pesquisa-container {
+    background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
+    border: 2px solid #1976d2;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(25, 118, 210, 0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.busca-avancada-sidebar .pesquisa-container:hover {
+    box-shadow: 0 12px 32px rgba(25, 118, 210, 0.18), 0 2px 8px rgba(0,0,0,0.10);
+    border-color: #1251a3;
+}
+
+.busca-avancada-sidebar h3.h5 {
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+    font-weight: 700;
+}
+
 .busca-avancada-sidebar .form-label {
-    font-size: 0.98rem;
-    font-weight: 500;
-}
-
-.busca-avancada-sidebar .form-select {
-    font-size: 0.97rem;
-    padding: 0.4rem 0.75rem;
-}
-
-.busca-avancada-sidebar .btn-lg {
     font-size: 1rem;
-    padding: 0.6rem 0;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.busca-avancada-sidebar .form-select, .busca-avancada-sidebar .form-control {
+    font-size: 1rem;
+    padding: 0.45rem 0.75rem;
+    margin-bottom: 0.7rem;
+    border: 1.5px solid #b6c6e3;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(25, 118, 210, 0.04);
+    transition: border-color 0.2s;
+}
+
+.busca-avancada-sidebar .form-select:focus, .busca-avancada-sidebar .form-control:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px #1976d233;
+}
+
+.busca-avancada-sidebar .btn-primary {
+    background: linear-gradient(90deg, #1976d2 60%, #1565c0 100%);
+    border: none;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+}
+
+.busca-avancada-sidebar .btn-primary:hover {
+    background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
 }
 
 /* --- LISTA DE LANÇAMENTOS --- */
@@ -277,4 +323,44 @@ body {
         max-width: 100%;
         margin-bottom: 2rem;
     }
+}
+
+/* CORREÇÃO DE LAYOUT DA BUSCA AVANÇADA */
+.busca-avancada-sidebar {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.busca-avancada-sidebar .pesquisa-container {
+    max-width: 100%;
+    min-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .pesquisa-container {
+    max-width: 700px;
+    min-width: 350px;
+  }
+}
+
+/* Ajuste para pesquisa-container: desktop e mobile */
+.pesquisa-container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .pesquisa-container {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 1rem 0.5rem;
+  }
 }

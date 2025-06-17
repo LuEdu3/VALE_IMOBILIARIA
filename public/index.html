@@ -75,67 +75,98 @@
         <hr>
 
         <h3 class="h5 mt-4">Busca Avançada</h3>
-        <div class="row g-3 mt-2">
-          <div class="col-md-6 col-lg-3">
-            <input class="form-control" list="estadoOptions" placeholder="*Estado">
-            <datalist id="estadoOptions">
-              <option value="Santa Catarina">
-              <option value="Paraná">
-              <option value="Rio Grande do Sul">
-            </datalist>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <input class="form-control" list="cidadeOptions" placeholder="*Cidade">
-            <datalist id="cidadeOptions">
-              <option value="Blumenau">
-              <option value="Gaspar">
-              <option value="Indaial">
-            </datalist>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <button type="button" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#bairroModal">
-              Bairro(s)
-            </button>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <button type="button" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#tipoImovelModal">
-              *Tipo de Imóvel
-            </button>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <select class="form-select">
-              <option selected>Finalidade (Venda)</option>
-              <option value="1">Venda</option>
-              <option value="2">Aluguel</option>
-            </select>
-          </div>
-          <div class="col-md-6 col-lg-3">
-             <select class="form-select">
-              <option selected>Dormitórios</option>
-              <option value="1">1+</option>
-              <option value="2">2+</option>
-              <option value="3">3+</option>
-              <option value="4">4+</option>
-            </select>
-          </div>
-          <div class="col-lg-3 col-md-6">
-             <div class="input-group">
-                <span class="input-group-text">R$</span>
-                <input type="text" class="form-control" placeholder="Valor Mín.">
-             </div>
-          </div>
-           <div class="col-lg-3 col-md-6">
-             <div class="input-group">
-                <span class="input-group-text">R$</span>
-                <input type="text" class="form-control" placeholder="Valor Máx.">
-             </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-12 d-flex justify-content-end">
-                <button type="button" class="btn btn-primary btn-lg">Buscar Imóveis</button>
+        <form action="#" method="GET">
+          <div class="row g-3 mt-2">
+            <div class="col-md-6 col-lg-3">
+              <label for="bairro" class="form-label">Bairro</label>
+              <select class="form-select" id="bairro" name="bairro">
+                <option value="">Todos</option>
+                <option>Centro</option>
+                <option>Horto</option>
+                <option>Veneza</option>
+                <option>Imbaúbas</option>
+                <option>Cariru</option>
+                <option>Bom Retiro</option>
+                <option>Jardim Panorama</option>
+                <option>Ideal</option>
+                <option>Esperança</option>
+                <option>Canaã</option>
+                <option>Betânia</option>
+                <option>Iguaçu</option>
+                <option>Ferroviários</option>
+                <option>Jardim das Oliveiras</option>
+                <option>Vila Celeste</option>
+                <option>Vila Militar</option>
+              </select>
             </div>
-        </div>
+            <div class="col-md-6 col-lg-3">
+              <label for="tipo" class="form-label">Tipo de Imóvel</label>
+              <select class="form-select" id="tipo" name="tipo">
+                <option value="">Todos</option>
+                <option>Apartamento</option>
+                <option>Casa</option>
+                <option>Kitnet</option>
+                <option>Cobertura</option>
+                <option>Terreno</option>
+                <option>Loja</option>
+                <option>Sala Comercial</option>
+                <option>Galpão</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <label for="faixa_preco" class="form-label">Faixa de Preço</label>
+              <select class="form-select" id="faixa_preco" name="faixa_preco">
+                <option value="">Todas</option>
+                <option>Até R$ 150.000</option>
+                <option>R$ 150.000 a R$ 300.000</option>
+                <option>R$ 300.000 a R$ 500.000</option>
+                <option>R$ 500.000 a R$ 800.000</option>
+                <option>Acima de R$ 800.000</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <label for="quartos" class="form-label">Quartos</label>
+              <select class="form-select" id="quartos" name="quartos">
+                <option value="">Qualquer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <label for="banheiros" class="form-label">Banheiros</label>
+              <select class="form-select" id="banheiros" name="banheiros">
+                <option value="">Qualquer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3+</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <label for="vagas" class="form-label">Vagas de Garagem</label>
+              <select class="form-select" id="vagas" name="vagas">
+                <option value="">Qualquer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3+</option>
+              </select>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <label for="finalidade" class="form-label">Finalidade</label>
+              <select class="form-select" id="finalidade" name="finalidade">
+                <option value="">Todas</option>
+                <option>Residencial</option>
+                <option>Comercial</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 
